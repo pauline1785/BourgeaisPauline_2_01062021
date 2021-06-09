@@ -3,54 +3,135 @@
 	src: url('fonts/Raleway-Medium.ttf');
 }
 
+@media screen and (max-width: 767px){
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+
+@media screen and (min-width: 1024px){
+
+}
+
+/* GLOBAL */
 *{
     font-family: "Raleway", Helvetica, Arial, sans-serif;
     color: #000;
     margin: 0;
-}
-
-.main {
-    max-width : 1199px;
-    margin: 0 auto;
-}
-
-body li{
     list-style-type: none;
 }
 
-header {
+.main {
+    max-width : 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /*les éléments retournent à la ligne au lieu de dépasser*/
 }
 
-.logo {
-  margin: 20px auto 0 20px;  
+header{
+    flex-basis: 100%; /* remplace le width, mieux avec flex*/
+    background-color: rgb(223, 208, 159);
 }
 
-nav {
+.search{
+    flex-basis: 100%; /* remplace le width, mieux avec flex*/
+    background-color: rgb(195, 224, 218);
+    height: 200px;
+}
+
+.hebergements{
+    flex-basis: 60%; /* remplace le width, mieux avec flex*/
+    background-color: rgb(201, 90, 46);
+    height: 300px;
+}
+
+.populaires{
+    flex-basis: 40%; /* remplace le width, mieux avec flex*/
+    background-color: rgb(62, 165, 96);
+    height: 300px;
+}
+
+.activites{
+    flex-basis: 100%; /* remplace le width, mieux avec flex*/
+    background-color: rgb(47, 106, 216);
+    height: 300px;
+}
+
+footer{
+    background-color: #f2f2f2;
+    height: 200px;
+}
+
+
+/* ----------HEADER---------- */
+nav{
+    display: flex;
+    flex-flow: row wrap; /* regroupe la direction et le retour à la ligne */
+    height: 100px;
+}
+
+.brand_logo{
+    margin: 15px auto 0px 18px;
+}
+
+nav ul{
+    flex-basis: 50%;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end; /* les éléments sont collés au bord droit */
+}
+
+nav li a{
     display: block;
-    width: 40%;
-    margin-bottom: 0;
-}
-
-nav ul {
-    display: block;
-    height: 100%;
-}
-
-nav li {
-    display:inline-block;
-    padding: 0 6%;
-}
-
-nav a{
-    display: block;
-    height: 100%;
     text-decoration: none;
+    padding: 30px 20px 0 20px;
     
 }
 
-nav a:hover{
+nav li a:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
+    padding-top: 28px;
 }
+
+#subscribe{
+    color: #0065FC;
+    font-weight: bold;
+}
+
+#subscribe:hover{
+    border-top: none;
+    color:  #DEEBFF;
+    padding-top: 30px;
+}
+
+
+
+/* ----------SEARCH---------- */
+.search h1{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 18px;
+}
+
+.search p{
+    font-size: 14px;
+    padding: 5px 18px 0 18px;
+}
+
+#search_bar{
+    padding: 0 18px;
+}
+
+
+
+/* HEBERGEMENTS */
+
+/* POPULAIRES */
+
+/* ACTIVITES */
+
+/* FOOTER */
