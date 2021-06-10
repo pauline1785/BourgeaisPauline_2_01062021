@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
         <script src="https://kit.fontawesome.com/08bbe595b3.js" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>
         <title>Reservia</title>
     </head>
 
@@ -39,11 +40,13 @@
             <form action="#" method="post">
                 <div id="search_bar">
                     <i class="fas fa-map-marker-alt"></i>
-                    <input type="text" placeholder="Search..">
-                    <input type="submit" value="Recherche">
+                    <input type="search" name="search" value="Marseille, France">
+                    <button type="submit" value="Recherche">
+                        <span>Recherche</span>
+                    </button>
                 </div>
 
-                <div id="filtres">
+                <div class="filters">
                     <p>Filtres</p>
                     <ul>
                         <li>
