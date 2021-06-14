@@ -20,40 +20,32 @@
     font-family: "Raleway", Helvetica, Arial, sans-serif;
     margin: 0;
     list-style-type: none;
+    --font-color: #000;
+    --color01: #0065FC;
+    --color02: #DEEBFF;
+    --color03: #F2F2F2;
 }
 
 .main {
     max-width : 1200px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap; /*les éléments retournent à la ligne au lieu de dépasser*/
 }
 
-header{
-    flex-basis: 100%; /* remplace le width, mieux avec flex*/
-    background-color: rgb(223, 208, 159);
-}
-
-.search{
-    flex-basis: 100%; /* remplace le width, mieux avec flex*/
-    background-color: rgb(195, 224, 218);
-    height: 300px;
-}
 
 .hebergements{
-    flex-basis: 60%; /* remplace le width, mieux avec flex*/
+    /*flex-basis: 60%; remplace le width, mieux avec flex*/
     background-color: rgb(201, 90, 46);
     height: 300px;
 }
 
 .populaires{
-    flex-basis: 40%; /* remplace le width, mieux avec flex*/
+    /*flex-basis: 40%;  remplace le width, mieux avec flex*/
     background-color: rgb(62, 165, 96);
     height: 300px;
 }
 
 .activites{
-    flex-basis: 100%; /* remplace le width, mieux avec flex*/
+    /*flex-basis: 100%;  remplace le width, mieux avec flex*/
     background-color: rgb(47, 106, 216);
     height: 300px;
 }
@@ -65,62 +57,66 @@ footer{
 
 
 /* ----------HEADER---------- */
-nav{
+header{
+    background-color: rgb(223, 208, 159);
     display: flex;
     flex-flow: row wrap; /* regroupe la direction et le retour à la ligne */
-    height: 100px;
+    justify-content: space-between; /* espace les éléments en collant le premier à gauche et le dernier à droite */
+}
+    
+.brand_logo{
+    margin: 20px auto 20px 20px;
 }
 
-.brand_logo{
-    margin: 15px auto 0px 18px;
+.brand_logo a{
+    padding: 0;
 }
 
 nav ul{
-    flex-basis: 50%;
-    padding: 0;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end; /* les éléments sont collés au bord droit */
+    padding: 0;
 }
 
-nav li a{
-    display: block;
+header a{
     text-decoration: none;
     padding: 30px 20px 0 20px;
-    
+    display: block;
+    color: var(--font-color);
 }
 
 nav li a:hover{
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
+    color: var(--color01);
+    border-top: 2px solid var(--color01);
     padding-top: 28px;
 }
 
-#subscribe{
-    color: #0065FC;
+.subscribe a{
+    color: var(--color01);
     font-weight: bold;
 }
 
-#subscribe:hover{
+.subscribe a:hover{
     border-top: none;
-    color:  #DEEBFF;
-    padding-top: 30px;
+    color: var(--color02);
 }
 
 
 
 /* ----------SEARCH---------- */
-
+.search{
+    background-color: rgb(195, 224, 218);
+    height: 300px;
+}
 /* h1 et p */
 .search h1{
     font-size: 20px;
     font-weight: bold;
-    padding: 0 18px;
+    padding: 0 20px;
 }
 
 .search p{
     font-size: 14px;
-    padding: 5px 18px 0 18px;
+    padding: 10px 0px 0 20px;
 }
 
 /* search bar */
@@ -155,14 +151,19 @@ nav li a:hover{
 }
 
 /* filters */
+.filters p{
+    padding-top: 0;
+}
 .filters{
     display: flex;
     flex-flow: row wrap;
 }
 
-.filters li{
-    display: inline-block;
+.filters ul{
+    display: flex;
 }
+
+
 
 /* ----------HEBERGEMENTS--------- */
 
