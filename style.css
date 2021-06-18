@@ -82,7 +82,7 @@ nav li a:hover{
 #search{
     flex-basis: 100%;
     height: 260px;
-    padding-left: 20px;
+    padding: 0 20px;
 }
 /* h1 et p */
 #search h1{
@@ -95,7 +95,7 @@ nav li a:hover{
     font-size: 14px;
 }
 
-/* search bar */
+/* ---search bar--- */
 #search_bar{
     display: inline-flex;
     margin: 15px 0;
@@ -125,6 +125,10 @@ nav li a:hover{
     color: #fff;
     cursor: pointer;
     font-family: "Raleway_bold", Helvetica, Arial, sans-serif;
+}
+
+button .fas{
+    display: none;
 }
 
 /* filters */
