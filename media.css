@@ -81,6 +81,18 @@
         padding: 40px 20px;
     }
 
+    .populaires_infos h3{
+        font-size: 16px;
+    }
+
+    .populaires_infos p{
+        font-size: 15px;
+    }
+
+    .populaires_infos .note{
+        font-size: 15px;
+    }
+
 
 
 /* --------- HEBERGEMENTS --------- */
@@ -121,7 +133,6 @@
     }
 
 
-    
 
 /* --------- ACTIVITES --------- */
     #activites{
@@ -159,6 +170,7 @@
         margin-top: 40px;
         padding-bottom: 40px;
     }
+
     .footer_infos{
         flex-basis: 100%;
         margin: 40px 30px 0;
@@ -176,7 +188,66 @@
 
 
 
+/* ==================
+        TABLETTES
+================== */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+/* --------- SEARCH --------- */
+    .filters p{
+        padding: 10px 0;
+    }
 
+    .filters ul{
+        margin-left: 0;
+    }
+
+
+
+/* --------- POPULAIRES --------- */
+    #populaires{
+        flex-basis: 100%;
+        border-radius: 0;
+        padding: 30px 20px;
+    }
+
+    .populaires_title{
+        margin-bottom: 20px;
+    }
+
+    .populaires_column a{
+        flex-basis: 28%;
+        margin: 0 10px;
+    }
+
+
+
+/* --------- HEBERGEMENTS --------- */
+    #hebergements{
+        order: 3;
+        flex-basis: 100%;
+        border-radius: 0;
+        margin: 0;
+        background-color: #fff;
+    }
+
+
+
+/* --------- ACTIVITES --------- */
+    #activites{
+        order: 4;
+        padding: 0 20px;
+        height: 500px;
+    }
+
+    .activites_content{
+        flex-wrap: wrap;
+    }
+
+    
+
+/* --------- FOOTER --------- */
+    footer{
+        justify-content: space-around;
+    }
 }
