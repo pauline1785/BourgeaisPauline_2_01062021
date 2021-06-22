@@ -253,6 +253,9 @@
         margin-top: 30px;
     }
 
+    .activites_group:last-of-type {
+        flex-direction: row-reverse;
+    }
     
 
 /* --------- FOOTER --------- */
