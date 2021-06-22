@@ -93,7 +93,9 @@
         font-size: 15px;
     }
 
-
+    .populaires_column img{
+        height: 111px;
+    }
 
 /* --------- HEBERGEMENTS --------- */
     #hebergements{
@@ -138,13 +140,17 @@
     #activites{
         order: 4;
         padding: 0 20px;
-        height: 1180px;
+        height: 1250px;
     }
 
     .activites_content{
         flex-direction: column;
         height: 600px;
         margin: 0px;
+    }
+
+    .activites_group{
+        flex-direction: column;
     }
 
     .activites_column{
@@ -167,7 +173,6 @@
 
 /* --------- FOOTER --------- */
     footer{
-        margin-top: 40px;
         padding-bottom: 40px;
     }
 
@@ -237,11 +242,15 @@
     #activites{
         order: 4;
         padding: 0 20px;
-        height: 500px;
     }
 
     .activites_content{
         flex-wrap: wrap;
+    }
+
+    .activites_group{
+        flex-basis: 100%;
+        margin-top: 30px;
     }
 
     
